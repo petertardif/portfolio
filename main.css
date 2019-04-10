@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+}
+
+nav, footer {
+    background-color: black;
+    color: white;
+    padding: 5% 0;
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  header {
+    padding: 20% 0;
+    display: inline-flex;
+    justify-content: center
+  }
+
+  section {
+    min-height: 200px;
+    padding: 5% 0;
+    background-color: gray;
+  }
+
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  .headshot {
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+
+  }
