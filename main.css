@@ -63,21 +63,17 @@ nav {
     font-family: 'Roboto Slab', sans-serif;
   }
 
-  ul li {
-    /* display: flex; */
-    justify-content: space-between;
-    list-style:none;
-    margin:0;
-    padding:10;
-  }
-
   li {
     display: inline-block;
-    padding: 0px 10px;
+    padding: 10px 2em;
   }
 
+ div.container  h2{
+    display: flex;
+    align-items: center;
+  }
   .container {
-    padding: 5%;
+    padding: 0 5%;
     width: 100%;
     display: flex;
     justify-content: space-between;
