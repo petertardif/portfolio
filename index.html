@@ -11,57 +11,86 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav role="banner">
+    <nav id="main-nav" role="banner">
       <div class="container">
         <h2>Peter Tardif</h2>
         <ul>
-            <li>projects</li>
-            <li>me</li>
-            <li>contact</li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#me">me</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </div>
     </nav>
     <main role="main">
-        <header role="banner">
-            <h1>Hi, I'm Pete.</h1>
-            <figure class="headshot">
-                <img class="headshot__img" src="./assets/PeteHeadShot_optimized.jpg" alt="headshot of Peter Tardif">  
-            </figure>
-            <p>I am natural leader and developer who prides himself on diligence, collaboration, and delivering. I breath JavaScript, HTML5, CSS3, and SQL to make people's lives and work easier. I love being a father, a husband, crafting house projects, and learning. </p>
+        <header id="me" role="banner">
+            <h1 class="greeting">Hi, I'm Pete.</h1>
+            <div>
+                <figure class="headshot">
+                    <img class="headshot__img" src="./assets/PeteHeadShot_optimized.jpg" alt="headshot of Peter Tardif">  
+                </figure>
+                <p class="p-text">I am natural leader and developer who prides himself on diligence, collaboration, and delivering. I have a passion for using JavaScript, HTML5, CSS3, and SQL to make people's lives and work easier. I love being a father, a husband, crafting house projects, and learning. </p>
+            </div>
         </header>
-
-        <section>
-            <h3>Random Gutenburg</h3>
-            <button class="btn-emphasis"><a href="https://codepen.io/petertardif/pen/XEwGPp" target="_blank">Code</a></button>
-            <button class="btn-emphasis"><a href="https://codepen.io/petertardif/pen/XEwGPp" target="_blank">Live</a></button>
-            <p>My first independent project while learning JavaScript, HTML5, and CSS3 solves the problem teachers and assessment writers face in finding non-copyrighted material to use when crafting English language arts high school assessments.  This simple website generates a random book(s), author, or topic from Project Gutenberg to potentially use as a text-based passage for assessing national learning standards.  It can also be used to find some new reading material from the public domain.  Enjoy Reading!</p>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
+        <hr id="projects">
+        <section class="section--layout">
+            <h3 class="greeting">Random Gutenburg</h3>
+            <div>
+                <div class="container-buttons">
+                    <button class="btn--emphasis"><a class="button__a" href="https://codepen.io/petertardif/pen/XEwGPp" target="_blank">Code</a></button>
+                    <button class="btn--emphasis"><a class="button__a" href="https://codepen.io/petertardif/pen/XEwGPp" target="_blank">Live</a></button>
+                </div>
+                <div class="container-icons">
+                    <i class="fab fa-lg fa-js-square"></i>
+                    <i class="fab fa-lg fa-html5"></i>
+                    <i class="fab fa-lg fa-css3"></i>
+                    <i class="fab fa-lg fa-bootstrap"></i>
+                </div>
+            </div>
+            
+            <div>
+                <figure>
+                    <img src="./assets/randomGutenberg.jpg">
+                </figure>
+                <p class="p-text">My first independent project while learning JavaScript, HTML5, and CSS3 solves the problem teachers and assessment writers face in finding non-copyrighted material to use when crafting English language arts high school assessments.  This simple website generates a random book(s), author, or topic from Project Gutenberg to potentially use as a text-based passage for assessing national learning standards.  It can also be used to find some new reading material from the public domain.  Enjoy Reading!</p>
+            </div>
         </section>
-
-        <section>
-            <h3>Game of Thrones Quiz</h3>
-            <button class="btn-emphasis"><a href="https://github.com/thinkful-nights-weekends-codename-camel/quizAppPeterRyanShawn/settings" target="_blank">Code</a></button>
-            <button class="btn-emphasis"><a href="https://thinkful-nights-weekends-codename-camel.github.io/quizAppPeterRyanShawn/" target="_blank">Live</a></button>
-            <p>Have a spare 15 minutes? This quiz application tests your knowledge of the popular book series Game of Thrones by George R.R. Martin.</p>
-            <!-- List of technologies used - add JQuery icon below -->
-            <i class="fab fa-js-square"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3"></i>
+        <hr>
+        <section class="section--layout">
+            <h3 class="greeting">Game of Thrones Quiz</h3> 
+            <div>  
+                <div class="container-buttons">
+                    <button class="btn--emphasis"><a class="button__a" href="https://github.com/thinkful-nights-weekends-codename-camel/quizAppPeterRyanShawn/settings" target="_blank">Code</a></button>
+                    <button class="btn--emphasis"><a class="button__a" href="https://thinkful-nights-weekends-codename-camel.github.io/quizAppPeterRyanShawn/" target="_blank">Live</a></button>
+                </div>
+                <div class="container-icons">
+                    <i class="fab fa-lg fa-js-square"></i>
+                    <i class="fab fa-lg fa-html5"></i>
+                    <i class="fab fa-lg fa-css3"></i>
+                    <img src="./assets/jqueryIcon.jpg">
+                </div>
+            </div>  
+            <div>
+                <figure>
+                    <img src="./assets/quizAppGOT.jpg">
+                </figure>
+                <p class="p-text">Have a spare 15 minutes? This quiz application tests your knowledge of the popular book series Game of Thrones by George R.R. Martin.</p>
+            </div>
         </section>
-
-        <section>
-            Project 3
+        <hr>
+        <section class="section--layout">
+            <h3 class="greeting">Project 3</h3>
         </section>
     </main>
-    <footer role="contact-info">
-        <h3>Contact</h3>
-        <button><a href="mailto:peter.tardif@gmail.com">email</a></button>
-        <a href="https://twitter.com/petertardif" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/petertardif" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/petertardif/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <footer id="contact" role="contact-info">
+        <div class="container">
+            <h3>Contact</h3>
+            <a href="mailto:peter.tardif@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://twitter.com/petertardif" target="_blank"><i class="fa-lg fab fa-twitter"></i></a>
+            <a href="https://github.com/petertardif" target="_blank"><i class="fa-lg fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/petertardif/" target="_blank"><i class="fa-lg fab fa-linkedin"></i></a>
+        </div>
     </footer>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
