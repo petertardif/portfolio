@@ -6,7 +6,7 @@ $(document).ready(function() {
             scrollTop: $(targetHref).offset().top
         }, 1000);
         
-        e.preventDefault();
+        event.preventDefault();
     });
 });
 
