@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function autoScrolling() {
 	$('#main-nav li a').click(function(event){
         var targetHref = $(this).attr('href');
 	  
@@ -8,5 +8,10 @@ $(document).ready(function() {
         
         event.preventDefault();
     });
-});
+};
 
+function pageLoaded() {
+    autoScrolling();
+}
+
+$(pageLoaded);
