@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
 </head>
 <body>
     <nav id="main-nav" role="banner">
       <div class="container">
-        <h2>Peter Tardif</h2>
+        <h2><a href="http://www.petertardif.com">Peter Tardif</a></h2>
         <ul>
             <li><a href="#projects">projects</a></li>
             <li><a href="#me">me</a></li>
+            <li><a href="https://petertardifblog.netlify.com/">blog</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </div>
@@ -29,56 +31,104 @@
                 <figure class="headshot">
                     <img class="headshot__img" src="./assets/PeteHeadShot_optimized.jpg" alt="headshot of Peter Tardif">  
                 </figure>
-                <p class="p-text">I am natural leader and developer who prides himself on diligence, collaboration, and delivering on time and above expectations. I have a passion for using JavaScript, HTML5, CSS3, and SQL to make people's lives and work easier. I love being a father, a husband, crafting house projects, and learning. </p>
+                <p class="p-text">I am natural leader and developer who prides himself on diligence, collaboration, and delivering on time and above expectations. I have a passion for using technology to make people's lives and work easier. I love being a father, a husband, crafting house projects, and learning. </p>
             </div>
         </header>
         <hr id="projects">
         <section class="section--layout">
-            <h3 class="greeting">Random Gutenburg</h3>
-            <div>
-                <div class="container-buttons">
-                    <button class="btn--emphasis"><a class="button__a" href="https://codepen.io/petertardif/pen/XEwGPp" target="_blank">Github</a></button>
-                    <button class="btn--emphasis"><a class="button__a" href="https://codepen.io/petertardif/full/XEwGPp" target="_blank">Link</a></button>
+            <h2 class="greeting">Family Vault</h2>
+            <a href="https://github.com/petertardif/family-vault" target="_blank"><i class="fa-lg fab fa-github github-repo-icon"></i></a>
+              <div class="row">
+                <div class="col-6">
+                    <p class="p-text">My wife and I love our children. So many things they do are very precious and dear to our hearts. We often find ourselves saying, “we have to write this down.” We wanted to easily capture these moments where a picture or image would not be able to tell the full story. So, when you fail to capture the picture or video and cannot recreate the moment...Vault it!  This app helps capture memories by “Naming it,” “Describing it,” and “Capturing it”! Forever capture your family's precious moments through thoughts, letters, audio, images, and videos.</p>
                 </div>
-                <div class="container-icons">
-                    <i class="fab fa-lg fa-bootstrap"></i>
-                    <i class="fab fa-lg fa-js-square"></i>
+                <div class="col-6">
+                    <a href="https://family-vault.petertardif.now.sh/" 
+                      target="_blank">
+                      <img 
+                        class="screenshots" 
+                        srcset="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_380/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg 380w,
+                        https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg 550w,
+                        https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg 720w,
+                        https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_575/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg 1024w"
+                        sizes="(max-width: 60em) 28em, 65vw"
+                        src="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_450/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg"
+                      >
+                    </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 container-icons">
+                    <i class="fab fa-lg fa-react"></i>
+                    <i class="fab fa-lg fa-node"></i>
                     <i class="fab fa-lg fa-html5"></i>
-                    <i class="fab fa-lg fa-css3"></i>
+                    <i class="fab fa-lg fa-css3-alt"></i>
+                    <img class="postgresql" src="./assets/postgresql.svg">
                 </div>
-            </div>
-            
-            <div>
-                <figure>
-                    <img src="./assets/randomGutenberg.jpg">
-                </figure>
-                <p class="p-text">Need some new reading material, but don't know where to look? My first independent project using JavaScript, HTML5, CSS3, and Bootstrap that generates a random book(s), author, or topic from Project Gutenberg to be used to find some new reading material from the public domain.  Enjoy Reading!</p>
-            </div>
+              </div>
         </section>
         <hr>
         <section class="section--layout">
-            <h3 class="greeting">Game of Thrones Quiz</h3> 
-            <div>  
-                <div class="container-buttons">
-                    <button class="btn--emphasis"><a class="button__a" href="https://github.com/thinkful-nights-weekends-codename-camel/quizAppPeterRyanShawn" target="_blank">Github</a></button>
-                    <button class="btn--emphasis"><a class="button__a" href="https://thinkful-nights-weekends-codename-camel.github.io/quizAppPeterRyanShawn/" target="_blank">Link</a></button>
+            <h2 class="greeting">The Community Toolbox</h2> 
+            <a href="https://github.com/CommunityTB/toolbox-client" target="_blank"><i class="fa-lg fab fa-github github-repo-icon"></i></a>
+              <div class="row">
+                <div class="col-6">
+                    <p class="p-text">The Community Toolbox is an online tool library where users can find and rent tools for home improvement projects. The full stack application allows the user to create a profile for reserving tools and checking them out. When a tool is checked out the user is given instructions to the warehouse and how the pick-up process works. The user interface allows the user to quickly check a tools availability and to keep track of their checked out tools. The Community Toolbox is an excellent reservation resource for local tool libraries to feature their inventories online.</p>
                 </div>
-                <div class="container-icons">
-                    <i class="fab fa-lg fa-js-square"></i>
-                    <i class="fab fa-lg fa-html5"></i>
-                    <i class="fab fa-lg fa-css3"></i>
-                </div>
+                <div class="col-6">
+                  <a href="https://toolbox-client.teamredpanda.now.sh/" 
+                     target="_blank">
+                      <img class="screenshots" 
+                        srcset="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_380/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg 380w,
+                        https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg 550w,
+                        https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg 720w,
+                        https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_575/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg 1024w"
+                        sizes="(max-width: 30em) 28em, 65vw"
+                       src="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_450/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg"
+                      >
+                  </a>
+              </div>
+              </div>
+            <div class="row">
+              <div class="col-12 container-icons">
+                <i class="fab fa-lg fa-react"></i>
+                <i class="fab fa-lg fa-node"></i>
+                <i class="fab fa-lg fa-html5"></i>
+                <i class="fab fa-lg fa-css3-alt"></i>
+                <img class="postgresql" src="./assets/postgresql.svg">
+              </div>
             </div>  
-            <div>
-                <figure>
-                    <img src="./assets/quizAppGOT.jpg">
-                </figure>
-                <p class="p-text">Have a spare 15 minutes? This quiz application uses JQuery, JavaScript, HTML5, and CSS3 to tests your knowledge of the popular book series <em>The Game of Thrones</em> by George R.R. Martin.</p>
-            </div>
         </section>
         <hr>
         <section class="section--layout">
-            <h3 class="greeting">Project 3</h3>
+            <h2 class="greeting">Programming Focus</h2> 
+            <a href="https://github.com/petertardif/programmingFocus" target="_blank"><i class="fa-lg fab fa-github github-repo-icon"></i></a>
+              <div class="row">
+                <div class="col-6">
+                  <p class="p-text">This application was designed for developers, especially beginners, to search for programming or code-related concepts that return relevant questions from Stack Overflow and educational videos from YouTube.</p>
+                </div>
+                <div class="col-6">
+                  <a href="https://programmingfocus.netlify.com/" 
+                     target="_blank">
+                     <img class="screenshots" 
+                          srcset="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_380/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg 380w,
+                          https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg 550w,
+                          https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg 720w,
+                          https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_575/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg 1024w"
+                          sizes="(max-width: 30em) 28em, 65vw"
+                          src="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_450/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg"
+                      >
+                  </a>
+                </div>
+              </div>  
+              <div class="row">
+                <div class="col-12 container-icons">
+                    <i class="fab fa-lg fa-js-square"></i>
+                    <i class="fab fa-lg fa-html5"></i>
+                    <i class="fab fa-lg fa-css3-alt"></i>
+                    <img class="jquery" src="./assets/jquery.svg">
+                </div>
+              </div>
         </section>
     </main>
     <footer id="contact" role="contact-info">
