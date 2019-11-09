@@ -45,4 +45,16 @@
   .col-12 {
     width: 100%;
   }
+  
+  .row {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .row {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
 }
