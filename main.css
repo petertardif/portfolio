@@ -260,6 +260,11 @@ hr {
   padding: 1em;
 }
 
+.about-text {
+  display: flex;
+  align-items: center;
+}
+
 .github-repo-icon {
   color: var(--first-color);
   display: flex;
