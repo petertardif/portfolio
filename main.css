@@ -303,6 +303,10 @@ a:hover {
   align-items: center;
 }
 
+.live-link {
+  color: var(--second-color);
+}
+
 /* END Text Styles
  ------------------------------*/
 
