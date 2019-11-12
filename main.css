@@ -129,7 +129,7 @@ a:hover {
 
 /* BEGIN Hamburger Styles
  ------------------------------*/
- 
+ /* hamburger icon courtesy of  https://github.com/jonsuh/hamburgers */
  .responsive-menu{
   display: none;
   position: fixed;
