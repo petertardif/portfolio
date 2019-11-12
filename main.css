@@ -50,6 +50,35 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', sans-serif;
 }
 
+hr {
+  width: 75%;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+div.container  h2 {
+  display: flex;
+  align-items: center;
+}
+
+div.container {
+  align-items: center;
+}
+
+.container {
+  padding: 0 5%;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-icons {
+  min-width: 50%;
+}
+
 /* END General Styles
  ------------------------------*/
 
@@ -191,7 +220,7 @@ a:hover {
 /* END Hamburger Styles
  ------------------------------*/
 
-/* BEGIN Image Styles
+/* BEGIN Image/Icon Styles
  ------------------------------*/
 
 .headshot {
@@ -210,45 +239,49 @@ a:hover {
   width: 40px;
 }
 
+.react-icon:hover {
+  color: #53D2FA;
+}
+
+.node-icon:hover {
+  color: #0E5D01;
+}
+
+.html5-icon:hover {
+  color: #DA391D;
+}
+
+.css3-icon:hover {
+  color: #1B2FD7;
+}
+
+.js-icon:hover {
+  color: #EDD418;
+}
+
 .screenshots {
   margin: 0;
   /* box-shadow: 0px 0px 5px gray; */
   border-radius: 5px;
 }
 
+.github-repo-icon {
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.github-repo-icon:hover {
+  color: var(--fifth-color);
+}
+
 /* END Image Styles
  ------------------------------*/
 
-
-.container-icons {
-  min-width: 50%;
-}
-
-div.container  h2 {
-  display: flex;
-  align-items: center;
-}
-
-div.container {
-  align-items: center;
-}
-
-.container {
-  padding: 0 5%;
-  width: 100%;
-  height: 75px;
-  display: flex;
-  justify-content: space-between;
-}
-
-hr {
-  width: 75%;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-}
-
+/* BEGIN Text Styles
+ ------------------------------*/
+ 
 .greeting {
   display: flex;
   justify-content: center;
@@ -265,16 +298,60 @@ hr {
   align-items: center;
 }
 
-.github-repo-icon {
-  color: var(--first-color);
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+/* END Text Styles
+ ------------------------------*/
+
+ /* BEGIN Tooltip Styles
+ ------------------------------*/
+ /* from W3 schools */
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.github-repo-icon:hover {
-  color: var(--fifth-color);
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--second-color) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+ /* END Tooltip Styles
+ ------------------------------*/
 
 /* mobile styles */
 @media only screen and (min-width: 320px) {
