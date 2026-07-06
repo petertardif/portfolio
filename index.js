@@ -1,34 +1,24 @@
-function autoScrolling() {
-	$('#main-nav li a, .responsive-menu li a').click(function(event){
-        var targetHref = $(this).attr('href');
-	  
-        $('html, body').animate({
-            scrollTop: $(targetHref).offset().top
-        }, 1000);
-        $('.hamburger').toggleClass('hamburger--collapse is-active')
-    $('.responsive-menu').toggleClass('expand')
-    $('button').attr('aria-expanded',function(index,TF) {
-        return TF == 'true' ? 'false' : 'true';
-    })
-        event.preventDefault();
-    });
-};
+(function () {
+	const menuBtn = document.getElementById('menu-btn');
+	const mobileMenu = document.getElementById('mobile-menu');
 
-function hamburgerMenu() {
-  $( '.hamburger' ).click(function(){
-    $('.hamburger').toggleClass('hamburger--collapse is-active')
-    $('.responsive-menu').toggleClass('expand')
-    $('button').attr('aria-expanded',function(index,TF) {
-        return TF == 'true' ? 'false' : 'true';
-    })
-  })
-}
+	if (!menuBtn || !mobileMenu) return;
 
-function pageLoaded() {
-    autoScrolling();
-    hamburgerMenu();
-}
+	function setMenu(open) {
+		mobileMenu.classList.toggle('is-open', open);
+		menuBtn.setAttribute('aria-expanded', String(open));
+		menuBtn.querySelector('i').className = open
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars';
+	}
 
+	menuBtn.addEventListener('click', function () {
+		setMenu(!mobileMenu.classList.contains('is-open'));
+	});
 
-
-$(pageLoaded);
+	mobileMenu.querySelectorAll('a').forEach(function (link) {
+		link.addEventListener('click', function () {
+			setMenu(false);
+		});
+	});
+})();

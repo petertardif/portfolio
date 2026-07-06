@@ -1,5 +1,5 @@
 Hi, I'm Pete.
 
-I am a natural leader and developer who prides himself on diligence, collaboration, and delivering on time and above expectations. I have a passion for using technology to make people's lives and work easier. I love being a father, a husband, crafting house projects, and learning.
+I lead, I build, and I learn anything. I've coached teams, taught classrooms, run statewide programs, and now I build and ship software. Titles change; the work ethic doesn't.
 
-Check out my projects and get in touch!
+Static portfolio site (vanilla HTML/CSS/JS) — `index.html` is the home page, `blog.html` is the blog. Design from a Claude Design handoff (Anton / Barlow / Space Mono, `#345a7d` accent).

@@ -4,228 +4,293 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Peter Tardif Portfolio</title>
+	<title>Peter Tardif — Leader, Developer, Educator</title>
+	<meta name="description"
+		content="Portfolio of Peter Tardif. I've coached teams, taught classrooms, run district wide programs, and now I build and ship software." />
 	<link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
 	<link rel="manifest" href="./assets/site.webmanifest" />
-	<link rel="shortcut icon" href="#" />
-	<!-- added to remove error of "Failed to load resource: the server responded with a status of 404 (Not Found)" :8081/favicon.ico:1  -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway%7CRoboto+Slab" rel="stylesheet" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 	<link rel="stylesheet" href="main.css" />
-	<link rel="stylesheet" type="text/css" href="grid.css" />
 </head>
 
 <body>
-	<nav id="main-nav">
-		<div class="container">
-			<h2><a href="http://www.petertardif.com">Peter Tardif</a></h2>
-			<button class="hamburger menu-btn" id="menu-btn" type="button" aria-label="main-nav" aria-controls="main-nav"
+	<!-- ===== NAV ===== -->
+	<nav class="site-nav">
+		<div class="container site-nav__inner">
+			<a href="#top" class="brand">
+				<span class="brand__mark">PT</span>
+				<span class="brand__name">Peter Tardif</span>
+			</a>
+			<div class="nav-links">
+				<a href="#work" class="nav-links__item">Work</a>
+				<a href="#about" class="nav-links__item">About</a>
+				<a href="blog.html" class="nav-links__item">Blog</a>
+				<a href="#contact" class="nav-links__cta">Get in touch</a>
+			</div>
+			<button id="menu-btn" class="menu-btn" type="button" aria-label="Menu" aria-controls="mobile-menu"
 				aria-expanded="false">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
+				<i class="fa-solid fa-bars"></i>
 			</button>
 		</div>
+		<div id="mobile-menu" class="mobile-menu">
+			<a href="#work" class="mobile-menu__item">Work</a>
+			<a href="#about" class="mobile-menu__item">About</a>
+			<a href="blog.html" class="mobile-menu__item">Blog</a>
+			<a href="#contact" class="mobile-menu__item mobile-menu__item--cta">Get in touch &rarr;</a>
+		</div>
 	</nav>
-	<div class="responsive-menu">
-		<ul class="mobile-links">
-			<li><a href="#projects">projects</a></li>
-			<li><a href="#me">me</a></li>
-			<li>
-				<a href="https://blog.petertardif.com/">blog</a>
-			</li>
-			<li><a href="#contact">contact</a></li>
-		</ul>
-	</div>
-	<main>
-		<header id="me">
-			<h1 class="greeting">Hi, I'm Pete.</h1>
+
+	<!-- ===== HERO ===== -->
+	<header id="top" class="container hero">
+		<div class="hero__grid">
 			<div>
-				<figure class="headshot">
-					<img class="headshot__img" src="./assets/PeteHeadShot_optimized.jpg" alt="headshot of Peter Tardif" />
-				</figure>
-				<p class="p-text about-text">
-					I am a natural leader and developer who prides himself on diligence,
-					collaboration, and delivering on time and above expectations. I have
-					a passion for collaborating with great developers and using
-					technology to make people's lives and work easier. I love being a
-					father, a husband, crafting house projects, and learning.
+				<div class="hero__badges">
+					<span class="hero__kicker">Leader &middot; Developer &middot; Educator</span>
+					<span class="badge-open">
+						<span class="badge-open__dot"></span>Open to work
+					</span>
+				</div>
+				<h1 class="display hero__title">I lead, I build, and I learn anything.</h1>
+				<p class="lede hero__lede">
+					Hi, I'm Pete. I've coached teams, taught classrooms, run large programs, and now I build and
+					ship software. Titles change; the work ethic doesn't. As AI reshapes the field, bet on the person
+					who adapts &mdash; and delivers.
+				</p>
+				<div class="hero__actions">
+					<a href="#work" class="btn-primary">See the work <i
+							class="fa-solid fa-arrow-down btn-primary__icon"></i></a>
+					<a href="#contact" class="btn-ghost">Get in touch</a>
+				</div>
+			</div>
+			<div class="hero__photo">
+				<div class="hero__photo-frame">
+					<img class="hero__photo-img" src="./assets/headshot1.jpeg"
+						alt="Headshot of Peter Tardif" />
+				</div>
+				<div class="hero__photo-chip">
+					<div class="hero__photo-chip-big">Multiple careers</div>
+					<div class="hero__photo-chip-small">one work ethic</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- ===== ORIGIN (dark band) ===== -->
+	<section class="band-dark">
+		<div class="container band-dark__inner">
+			<div class="origin__grid">
+				<div>
+					<div class="eyebrow eyebrow--orange">Where I'm from</div>
+					<h2 class="display origin__title">You earn it. Nobody hands it to you.</h2>
+				</div>
+				<div>
+					<p class="origin__text">
+						I was born and raised in Buffalo &mdash; a blue-collar town on the banks of Lake Erie that's
+						often a national punchline. What outsiders miss is the resilience it builds into its people.
+					</p>
+					<p class="origin__text">
+						Values there aren't given; they're earned through vision, hard work, and determination. I carry
+						that into every room I walk into and every line of code I write.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== RANGE (vertical timeline) ===== -->
+	<section class="container range">
+		<div class="range__head">
+			<div class="eyebrow">Proof of range</div>
+			<h2 class="display section-title">One thread runs through it all: people.</h2>
+		</div>
+
+		<div class="timeline">
+			<div class="timeline__rail"></div>
+
+			<div class="timeline__item">
+				<div class="timeline__dot"></div>
+				<div class="timeline__head">
+					<span class="timeline__role">Educator</span>
+					<span class="timeline__meta">Middle &amp; high school English</span>
+				</div>
+				<p class="timeline__text">Taught kids to read closely, write clearly, and think for themselves.
+					Communication was the whole job.</p>
+			</div>
+
+			<div class="timeline__item">
+				<div class="timeline__dot"></div>
+				<div class="timeline__head">
+					<span class="timeline__role">Coach</span>
+					<span class="timeline__meta">HS basketball &rarr; 5-yr flag football</span>
+				</div>
+				<p class="timeline__text">From high-level NYC high school basketball to five-year-old flag football.
+					Reading people and getting the best out of a team.</p>
+			</div>
+
+			<div class="timeline__item">
+				<div class="timeline__dot"></div>
+				<div class="timeline__head">
+					<span class="timeline__role">Administrator</span>
+					<span class="timeline__meta">School district</span>
+				</div>
+				<p class="timeline__text">Leading people and systems at the district level &mdash; accountability,
+					judgment, and doing right by the people who depend on you.</p>
+			</div>
+
+			<div class="timeline__item">
+				<div class="timeline__dot"></div>
+				<div class="timeline__head">
+					<span class="timeline__role">Manager</span>
+					<span class="timeline__meta">Concurrent enrollment &middot; district wide</span>
+				</div>
+				<p class="timeline__text">Managed concurrent-enrollment programs and district wide initiatives built
+					straight from legislation. Big scope, real stakes.</p>
+			</div>
+
+			<div class="timeline__item">
+				<div class="timeline__dot timeline__dot--now"></div>
+				<div class="timeline__head">
+					<span class="timeline__role">Developer</span>
+					<span class="timeline__meta timeline__meta--now">Where I am now</span>
+				</div>
+				<p class="timeline__text">Taught myself to build the tools I always wished existed. Same instinct as
+					every job before it: make people's lives and work easier.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== WORK ===== -->
+	<section id="work" class="work">
+		<div class="container work__inner">
+			<div class="work__head">
+				<div>
+					<div class="eyebrow">Selected work</div>
+					<h2 class="display section-title">Software I've built and shipped.</h2>
+				</div>
+				<a href="https://github.com/petertardif" target="_blank" rel="noopener noreferrer"
+					class="work__all-repos"><i class="fa-brands fa-github"></i> All repos</a>
+			</div>
+
+			<div class="work__grid">
+
+				<!-- Cabin -->
+				<article class="project-card">
+					<div class="project-card__media media-placeholder">
+						<span class="media-placeholder__label">cabin-app &mdash; screenshot</span>
+					</div>
+					<div class="project-card__body">
+						<div class="project-card__index">01 &middot; Community admin</div>
+						<h3 class="project-card__title">Cabin</h3>
+						<p class="project-card__text">Runs a small cabin community end to end &mdash; lot records,
+							owner accounts, the annual water bill, board governance, and messaging. Each owner also
+							gets a hub for inventory, maintenance, visit requests, and open/close checklists.</p>
+						<div class="project-card__links">
+							<a href="https://github.com/petertardif/cabin-app" target="_blank" rel="noopener noreferrer"
+								class="project-card__source"><i class="fa-brands fa-github"></i> Source</a>
+							<span class="tag-private"><i class="fa-solid fa-lock tag-private__icon"></i> Private
+								app</span>
+						</div>
+					</div>
+				</article>
+
+				<!-- One Stop -->
+				<article class="project-card">
+					<div class="project-card__media media-placeholder">
+						<span class="media-placeholder__label">one-stop &mdash; screenshot</span>
+					</div>
+					<div class="project-card__body">
+						<div class="project-card__index">02 &middot; Private finance</div>
+						<h3 class="project-card__title">One Stop</h3>
+						<p class="project-card__text">A private, family-focused financial hub. Consolidates account
+							balances, investing research, and a contingency guide into a single, calm place to see
+							everything at once.</p>
+						<div class="project-card__links">
+							<a href="https://github.com/petertardif/one-stop" target="_blank" rel="noopener noreferrer"
+								class="project-card__source"><i class="fa-brands fa-github"></i> Source</a>
+							<span class="tag-private"><i class="fa-solid fa-lock tag-private__icon"></i> Private
+								app</span>
+						</div>
+					</div>
+				</article>
+
+				<!-- PJT Development -->
+				<article class="project-card">
+					<div class="project-card__media media-placeholder">
+						<span class="media-placeholder__label">pjtdevelopment.com &mdash; screenshot</span>
+					</div>
+					<div class="project-card__body">
+						<div class="project-card__index">03 &middot; Client services</div>
+						<h3 class="project-card__title">PJT Development</h3>
+						<p class="project-card__text">Custom software, built and shipped by one developer who explains
+							every step in plain English. No agency overhead. No handoffs. No jargon.</p>
+						<div class="project-card__links">
+							<a href="https://github.com/petertardif/pjtdevelopment" target="_blank"
+								rel="noopener noreferrer" class="project-card__source"><i
+									class="fa-brands fa-github"></i> Source</a>
+							<a href="https://www.pjtdevelopment.com" target="_blank" rel="noopener noreferrer"
+								class="project-card__live">Live site <i
+									class="fa-solid fa-arrow-up-right-from-square project-card__live-icon"></i></a>
+						</div>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== ABOUT / FAMILY NOTE ===== -->
+	<section id="about" class="container about">
+		<div class="about__grid">
+			<div>
+				<div class="eyebrow">Off the keyboard</div>
+				<h2 class="display about__title">The reason for all of it.</h2>
+				<p class="lede about__text">
+					I'm proudest of being a husband and a father. My family is why I work the way I do &mdash; and the
+					honest test of whether the things I build are worth building.
+				</p>
+				<p class="lede about__text">
+					I keep their details off the internet, but they're behind every decision here. Diligence,
+					collaboration, and delivering above expectations aren't just work habits &mdash; they're how I show
+					up at home, too.
 				</p>
 			</div>
-		</header>
-		<hr id="projects" />
-		<section class="section--layout">
-			<h2 class="greeting">
-				<a class="live-link" href="https://family-vault.petertardif.now.sh/" target="_blank"
-					rel="noopener noreferrer">Family Vault</a>
-			</h2>
-			<div class="row row-icon">
-				<div class="col-3">
-					<a href="https://github.com/petertardif/family-vault" target="_blank" rel="noopener noreferrer"><i
-							class="fa-lg fab fa-github github-repo-icon"></i></a>
-					<a class="github-repo-icon" href="https://family-vault.petertardif.now.sh/" target="_blank"
-						rel="noopener noreferrer">View Live</a>
-				</div>
+			<div class="pullquote">
+				<div class="pullquote__quote">"I believe I can learn and build anything."</div>
+				<div class="pullquote__attr">&mdash; the one belief behind every chapter</div>
 			</div>
-			<div class="row">
-				<div class="col-6">
-					<p class="p-text">
-						My wife and I love our children. So many things they do are very
-						precious and dear to our hearts. We often find ourselves saying,
-						“we have to write this down.” We wanted to easily capture these
-						moments where a picture or image would not be able to tell the
-						full story. So, when you fail to capture the picture or video and
-						cannot recreate the moment...Vault it! This app helps capture
-						memories by “Naming it,” “Describing it,” and “Capturing it”!
-						Forever capture your family's precious moments through thoughts,
-						letters, audio, images, and videos.
-					</p>
-				</div>
-				<div class="col-6">
-					<a href="https://family-vault.petertardif.now.sh/" target="_blank" rel="noopener noreferrer">
-						<img class="screenshots" srcset="
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_380/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg  380w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg  550w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg  720w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_575/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg 1024w
-								" sizes="(max-width: 60em) 28em, 65vw"
-							src="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_450/v1573016401/Portfolio/family-vault-mac-iphone_bgk71a.jpg"
-							alt="desktop and mobile screenshots of landing page for Family Vault website" />
-					</a>
-				</div>
+		</div>
+	</section>
+
+	<!-- ===== CONTACT / FOOTER ===== -->
+	<footer id="contact" class="site-footer">
+		<div class="container site-footer__inner">
+			<div class="eyebrow eyebrow--orange site-footer__eyebrow">Get in touch</div>
+			<h2 class="display site-footer__title">Let's build something.</h2>
+			<a href="mailto:peter.tardif@gmail.com" class="site-footer__email">peter.tardif@gmail.com</a>
+			<div class="socials">
+				<a href="mailto:peter.tardif@gmail.com" aria-label="Email" class="socials__link"><i
+						class="fa-solid fa-envelope"></i></a>
+				<a href="https://github.com/petertardif" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+					class="socials__link"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/petertardif/" target="_blank" rel="noopener noreferrer"
+					aria-label="LinkedIn" class="socials__link"><i class="fa-brands fa-linkedin-in"></i></a>
+				<a href="https://twitter.com/petertardif" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+					class="socials__link"><i class="fa-brands fa-x-twitter"></i></a>
 			</div>
-			<div class="row">
-				<div class="col-12 container-icons">
-					<i class="fab fa-lg fa-react tooltip react-icon"><span
-							class="tooltiptext"><strong>React.js</strong></span></i>
-					<i class="fab fa-lg fa-node tooltip node-icon"><span class="tooltiptext"><strong>Node.js</strong></span></i>
-					<i class="fab fa-lg fa-html5 tooltip html5-icon"><span class="tooltiptext"><strong>HTML5</strong></span></i>
-					<i class="fab fa-lg fa-css3-alt tooltip css3-icon"><span class="tooltiptext"><strong>CSS3</strong></span></i>
-					<i class="fab fa-lg tooltip"><span class="tooltiptext"><strong>Postgresql</strong></span><img
-							class="postgresql" src="./assets/postgresql.svg" alt="postgresql icon" /></i>
-				</div>
+			<div class="site-footer__bottom">
+				<span>&copy; 2026 Peter Tardif</span>
+				<span>Built plainspoken, shipped on time.</span>
 			</div>
-		</section>
-		<hr />
-		<section class="section--layout">
-			<h2 class="greeting">
-				<a class="live-link" href="https://toolbox-client.teamredpanda.now.sh/" target="_blank"
-					rel="noopener noreferrer">The Community
-					Toolbox</a>
-			</h2>
-			<div class="row row-icon">
-				<div class="col-3">
-					<a href="https://github.com/CommunityTB/toolbox-client" target="_blank" rel="noopener noreferrer"><i
-							class="fa-lg fab fa-github github-repo-icon"></i></a>
-					<a class="github-repo-icon" href="https://toolbox-client.teamredpanda.now.sh/" target="_blank"
-						rel="noopener noreferrer">View Live</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<p class="p-text">
-						The Community Toolbox is an online tool library where users can
-						find and rent tools for home improvement projects. The full stack
-						application allows the user to create a profile for reserving
-						tools and checking them out. When a tool is checked out the user
-						is given instructions to the warehouse and how the pick-up process
-						works. The user interface allows the user to quickly check a tools
-						availability and to keep track of their checked out tools. The
-						Community Toolbox is an excellent reservation resource for local
-						tool libraries to feature their inventories online.
-					</p>
-				</div>
-				<div class="col-6">
-					<a href="https://toolbox-client.teamredpanda.now.sh/" target="_blank" rel="noopener noreferrer">
-						<img class="screenshots" srcset="
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_380/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg  380w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg  550w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg  720w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_575/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg 1024w
-								" sizes="(max-width: 30em) 28em, 65vw"
-							src="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_450/v1573017102/Portfolio/community-toolbox-mac-iphone_v0lvqn.jpg"
-							alt="desktop and mobile screenshots of landing page for Community Toolbox website" />
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 container-icons">
-					<i class="fab fa-lg fa-react tooltip react-icon"><span
-							class="tooltiptext"><strong>React.js</strong></span></i>
-					<i class="fab fa-lg fa-node tooltip node-icon"><span class="tooltiptext"><strong>Node.js</strong></span></i>
-					<i class="fab fa-lg fa-html5 tooltip html5-icon"><span class="tooltiptext"><strong>HTML5</strong></span></i>
-					<i class="fab fa-lg fa-css3-alt tooltip css3-icon"><span class="tooltiptext"><strong>CSS3</strong></span></i>
-					<i class="fab fa-lg tooltip"><span class="tooltiptext"><strong>Postgresql</strong></span><img
-							class="postgresql" src="./assets/postgresql.svg" alt="postgresql icon" /></i>
-				</div>
-			</div>
-		</section>
-		<hr />
-		<section class="section--layout">
-			<h2 class="greeting">
-				<a class="live-link" href="https://programmingfocus.netlify.com/" rel="noopener noreferrer">Programming
-					Focus</a>
-			</h2>
-			<div class="row row-icon">
-				<div class="col-3">
-					<a href="https://github.com/petertardif/programmingFocus" target="_blank" rel="noopener noreferrer"><i
-							class="fa-lg fab fa-github github-repo-icon"></i></a>
-					<a class="github-repo-icon" href="https://programmingfocus.netlify.com/" target="_blank"
-						rel="noopener noreferrer">View Live</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<p class="p-text">
-						This application was designed for developers, especially
-						beginners, to search for programming or code-related concepts that
-						return relevant questions from Stack Overflow and educational
-						videos from YouTube.
-					</p>
-				</div>
-				<div class="col-6">
-					<a href="https://programmingfocus.netlify.com/" target="_blank" rel="noopener noreferrer">
-						<img class="screenshots" srcset="
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_380/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg  380w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg  550w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_550/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg  720w,
-									https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_575/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg 1024w
-								" sizes="(max-width: 30em) 28em, 65vw"
-							src="https://res.cloudinary.com/tooltimeshare/image/upload/c_fill,w_450/v1573024620/Portfolio/programming-focus-mac-iphone_qgof2b.jpg"
-							alt="desktop and mobile screenshots of landing page for Programming Focus website" />
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 container-icons">
-					<i class="fab fa-lg fa-js-square tooltip js-icon"><span
-							class="tooltiptext"><strong>JavaScript</strong></span></i>
-					<i class="fab fa-lg fa-html5 tooltip html5-icon"><span class="tooltiptext"><strong>HTML5</strong></span></i>
-					<i class="fab fa-lg fa-css3-alt tooltip css3-icon"><span class="tooltiptext"><strong>CSS3</strong></span></i>
-					<i class="fab fa-lg tooltip"><span class="tooltiptext"><strong>jQuery</strong></span><img class="jquery"
-							src="./assets/jquery.svg" alt="jQuery icon" /></i>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer id="contact">
-		<div class="container">
-			<h3>Contact</h3>
-			<a href="mailto:peter.tardif@gmail.com"><i class="fas fa-lg fa-envelope"></i></a>
-			<a href="https://twitter.com/petertardif" target="_blank" rel="noopener noreferrer"><i
-					class="fa-lg fab fa-twitter"></i></a>
-			<a href="https://github.com/petertardif" target="_blank" rel="noopener noreferrer"><i
-					class="fa-lg fab fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/petertardif/" target="_blank" rel="noopener noreferrer"><i
-					class="fa-lg fab fa-linkedin"></i></a>
 		</div>
 	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 	<script src="index.js"></script>
 </body>
 
