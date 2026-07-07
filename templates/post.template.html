@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{{TITLE}} — Peter Tardif</title>
+	<meta name="description" content="{{EXCERPT}}" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png" />
+	<link rel="manifest" href="../assets/site.webmanifest" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+	<link rel="stylesheet" href="../main.css" />
+</head>
+
+<body>
+	<!-- ===== NAV ===== -->
+	<nav class="site-nav">
+		<div class="container site-nav__inner">
+			<a href="../index.html" class="brand">
+				<span class="brand__mark">PT</span>
+				<span class="brand__name">Peter Tardif</span>
+			</a>
+			<div class="nav-links">
+				<a href="../index.html#work" class="nav-links__item">Work</a>
+				<a href="../index.html#about" class="nav-links__item">About</a>
+				<a href="../blog.html" class="nav-links__item nav-links__item--active">Blog</a>
+				<a href="../index.html#contact" class="nav-links__cta">Get in touch</a>
+			</div>
+			<a href="../blog.html" class="nav-home-btn"><i class="fa-solid fa-arrow-left nav-home-btn__icon"></i>
+				Blog</a>
+		</div>
+	</nav>
+
+	<!-- ===== POST HEADER ===== -->
+	<header class="container post-header">
+		<a href="../blog.html" class="post-back"><i class="fa-solid fa-arrow-left post-back__icon"></i> All posts</a>
+		<div class="post-header__meta">
+			<span class="cat-badge cat-badge--lg cat-badge--{{CATEGORY_CLASS}}">{{CATEGORY}}</span>
+			<span class="post-header__note">{{DATE_DISPLAY}} &middot; {{READ_TIME}} min read</span>
+		</div>
+		<h1 class="display post-header__title">{{TITLE}}</h1>
+	</header>
+
+	<!-- ===== POST BODY ===== -->
+	<article class="container post-body">
+		<div class="prose">
+			{{CONTENT}}
+		</div>
+	</article>
+
+	<!-- ===== FOOTER ===== -->
+	<footer class="footer-slim">
+		<div class="container footer-slim__inner">
+			<a href="../blog.html" class="footer-slim__home"><i
+					class="fa-solid fa-arrow-left footer-slim__home-icon"></i> Back to blog</a>
+			<span class="footer-slim__note">&copy; 2026 Peter Tardif &middot; Plainspoken, shipped on time.</span>
+		</div>
+	</footer>
+</body>
+
+</html>

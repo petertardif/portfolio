@@ -47,17 +47,18 @@
 			built, a book that stuck with me, a fitness challenge, or a story about my kids. Just notes from a
 			curious person.</p>
 		<div class="chips">
-			<span class="chip chip--active">All</span>
-			<span class="chip">Home projects</span>
-			<span class="chip">Software</span>
-			<span class="chip">Books</span>
-			<span class="chip">Fitness</span>
-			<span class="chip">Family</span>
+			<button type="button" class="chip chip--active" data-filter="All">All</button>
+			<button type="button" class="chip" data-filter="Home Projects">Home projects</button>
+			<button type="button" class="chip" data-filter="Software">Software</button>
+			<button type="button" class="chip" data-filter="Books">Books</button>
+			<button type="button" class="chip" data-filter="Fitness">Fitness</button>
+			<button type="button" class="chip" data-filter="Family">Family</button>
 		</div>
 	</header>
 
 	<!-- ===== FEATURED POST ===== -->
 	<section class="container feature-section">
+		<!-- BUILD:FEATURED -->
 		<a href="#" class="feature">
 			<div class="feature__media media-placeholder">
 				<span class="media-placeholder__label">featured-post &mdash; image</span>
@@ -75,13 +76,15 @@
 						class="fa-solid fa-arrow-right feature__read-icon"></i></span>
 			</div>
 		</a>
+		<!-- /BUILD:FEATURED -->
 	</section>
 
 	<!-- ===== POST GRID ===== -->
 	<section class="container posts-section">
 		<div class="posts-grid">
+			<!-- BUILD:GRID -->
 
-			<a href="#" class="post-card">
+			<a href="#" class="post-card" data-category="Software">
 				<div class="post-card__media"></div>
 				<div class="post-card__body">
 					<div class="post-card__meta">
@@ -94,7 +97,7 @@
 				</div>
 			</a>
 
-			<a href="#" class="post-card">
+			<a href="#" class="post-card" data-category="Books">
 				<div class="post-card__media"></div>
 				<div class="post-card__body">
 					<div class="post-card__meta">
@@ -107,7 +110,7 @@
 				</div>
 			</a>
 
-			<a href="#" class="post-card">
+			<a href="#" class="post-card" data-category="Fitness">
 				<div class="post-card__media"></div>
 				<div class="post-card__body">
 					<div class="post-card__meta">
@@ -120,7 +123,7 @@
 				</div>
 			</a>
 
-			<a href="#" class="post-card">
+			<a href="#" class="post-card" data-category="Family">
 				<div class="post-card__media"></div>
 				<div class="post-card__body">
 					<div class="post-card__meta">
@@ -133,7 +136,7 @@
 				</div>
 			</a>
 
-			<a href="#" class="post-card">
+			<a href="#" class="post-card" data-category="Software">
 				<div class="post-card__media"></div>
 				<div class="post-card__body">
 					<div class="post-card__meta">
@@ -146,7 +149,7 @@
 				</div>
 			</a>
 
-			<a href="#" class="post-card">
+			<a href="#" class="post-card" data-category="Home Projects">
 				<div class="post-card__media"></div>
 				<div class="post-card__body">
 					<div class="post-card__meta">
@@ -159,6 +162,7 @@
 				</div>
 			</a>
 
+			<!-- /BUILD:GRID -->
 		</div>
 	</section>
 
@@ -170,6 +174,8 @@
 			<span class="footer-slim__note">&copy; 2026 Peter Tardif &middot; Plainspoken, shipped on time.</span>
 		</div>
 	</footer>
+
+	<script src="blog.js"></script>
 </body>
 
 </html>
